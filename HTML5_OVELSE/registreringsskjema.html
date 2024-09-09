@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Innhold</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <a href="validering.html">Valideringsoppgave</a>
+                    </li>
+                    <li>
+                        <a href="nettsidemal.html">Nettside-mal</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kontakt oss</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post">
+                    <label for="navn">Navn:</label>
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        Alder:
+                        <input type="number" min="18" max="99" required>
+                    </label>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phonenumber" name="phone-number" pattern="[0-9]{8,12}" required>
+                    <label>
+                        <input type="date" max="2023-12-31" required>
+                    </label>
+                    <label>
+                        Mann
+                        <input type="radio" name="valg" required>
+                    </label>
+                    <label>
+                        Kvinne
+                        <input type="radio" name="valg" required>
+                    </label>
+                    <label>
+                        Annet
+                        <input type="radio" name="valg" required>
+                    </label>
+                    <label>
+                        Land
+                        <select>
+                            <option value="Norge">Norge</option>
+                            <option value="Sverige">Sverige</option>
+                            <option value="Danmark">Danmark</option>
+                        </select>
+                    </label>
+                    <label>
+                        <input type="checkbox" required>
+                    </label>
+                    <input type="submit" value="Send melding">
+                </form>
+                </section>
+        </main>
+        <aside>
+
+        </aside>
+        <footer>
+            <p>Kontakt meg på epost: <a href="mailto:stefandj@hiof.no">Epost</a></p>
+            <h2> 2024 Stefan</h2>
+        </footer>
+    </body>
+</html>
