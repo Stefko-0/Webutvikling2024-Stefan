@@ -152,27 +152,27 @@ img {
     }
 
     #grid-container {
-        grid-template-columns: 1fr; /* Endrer layout til én kolonne på mobil */
-        grid-template-rows: auto auto auto auto; /* Setter fire rader for responsiv oppsett */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
     }
 
     header, main, aside, footer {
-        grid-column: 1/2; /* Sørger for at alle elementer strekker seg over hele bredden på mindre skjermer */
+        grid-column: 1/2;
     }
 
     header {
-        grid-row: 1/2; /* Plasserer headeren øverst på siden */
+        grid-row: 1/2;
     }
     
     main {
-        grid-row: 2/3; /* Plasserer hovedinnholdet i andre rad */
+        grid-row: 2/3;
     }
     
     aside {
-        display: none; /* Skjuler sideinnholdet (aside) på mindre skjermer */
+        display: none;
     }
     
     footer {
-        grid-row: 3/4; /* Plasserer fotnoten nederst på siden */
+        grid-row: 3/4;
     }
 }
