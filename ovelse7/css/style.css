@@ -1,0 +1,27 @@
+#grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 1;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.flex-menu{
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+#logo{
+    color: black;
+    font-size: 1.5rem;
+}
